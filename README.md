@@ -1,11 +1,11 @@
 # gridanised-newspaper
-Using CSS grids to re-create a web unfriendly. retro newspaper, loosely based on an old Dominion Post paper.
+Using CSS grids to re-create a web unfriendly. retro newspaper, loosely based on an old Dominion Post paper. "Why do this?", I hear you scream; for no particular reason but to experiment with the power of CSS Grids.
 
-The project is not based on any particular framework -- it is a project I have created myself from scratch. 
+The project is not based on any particular framework -- it is a project I have created myself from scratch.
 
 This project uses Node and some basic Gulp scripts to watch changes, and generate SASS and assets.
 
-## 
+##
 
 ## Gulp scripts
 
