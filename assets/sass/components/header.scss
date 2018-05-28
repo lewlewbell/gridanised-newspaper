@@ -1,0 +1,16 @@
+@import '../extensions/all';
+
+.header {
+    height: 285px; // TODO: Remove fixed height later to let the height flow naturally
+    margin-bottom: $spacing-small;
+    background-repeat: no-repeat;
+    background-position: top 30px;
+    font-family: "Publico", Verdana, sans-serif;
+
+    &__title {
+        margin: -8px 50px 0;
+        font-size: 7vw;
+        color: $color-white;
+        text-shadow: 4px 6px 2px #17b1ec;
+    }
+}

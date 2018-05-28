@@ -1,0 +1,116 @@
+// @function generate-grid-columns($total-columns) {
+
+//     $generated-columns: null;
+
+//     @for $i from 1 to $total-columns {
+//         $generated-columns: $generated-columns + '[col'$i'-start]';
+//     }
+
+//     @return $generated-columns;
+
+//     // If you were to generate 3 total columns, you would end up with this value:
+//     //
+// }
+
+// @mixin grid($column-number, $row-number) {
+//     grid-template-columns: generate-grid-columns($column-number);
+//     // grid-template-rows: [row#{$row-number}-start] 1fr [row#{$row-number}-end];
+// }
+
+@mixin grid-item($col-number, $row-number) {
+    grid-column: col#{$col-number}-start;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 0.7%;
+
+    .grid__item--1x1 {
+        @include grid-item(1, 1);
+    }
+
+    .grid__item--1x2 {
+        @include grid-item(1, 2);
+    }
+
+    .grid__item--2x1 {
+        @include grid-item(2, 1);
+    }
+
+    .grid__item--3x1 {
+        @include grid-item(3, 1);
+    }
+
+    .grid__item--4x1 {
+        @include grid-item(4, 1);
+    }
+
+    .grid__item--5x1 {
+        @include grid-item(5, 1);
+    }
+
+    .grid__item--6x1 {
+        @include grid-item(6, 1);
+    }
+
+    .grid__item--7x1 {
+        @include grid-item(7, 1);
+    }
+
+    .grid__item--1-3x1 {
+        grid-column: 1 / 4;
+    }
+
+    .grid__item--4-6x1 {
+        grid-column: 4 / 7;
+    }
+
+    .grid__item--1-7x2 {
+        grid-column: 1 / 8;
+    }
+}
+
+.grid--2x1 {
+    // @include grid(3, 1);
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col2-end];
+    grid-template-rows: [row1-start]  1fr [row1-end];
+}
+
+.grid--3x1 {
+    // @include grid(3, 1);
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
+    grid-template-rows: [row1-start]  1fr [row1-end];
+}
+
+.grid--5x1 {
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col5-end];
+    grid-template-rows: [row1-start]  1fr [row1-end];
+}
+
+.grid--6x1 {
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col6-start] 1fr [col6-end];
+    grid-template-rows: [row1-start]  1fr [row1-end];
+}
+
+
+.grid--7x1 {
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col6-start] 1fr [col7-start] 1fr [col7-end];
+    grid-template-rows: [row1-start]  1fr [row1-end];
+}
+
+.grid--7x2 {
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col6-start] 1fr [col7-start] 1fr [col7-end];
+    grid-template-rows: [row1-start]  1fr [row2-start] 1fr [row2-end];
+}
+
+.grid--1x2 {
+    // @include grid(3, 1);
+    grid-template-columns: [col1-start] 1fr [col1-end];
+    grid-template-rows: [row1-start]  1fr [row2-start]  1fr [row2-end];
+}
+
+.grid--1x6 {
+    // @include grid(3, 1);
+    grid-template-columns: [col1-start] 1fr [col1-end];
+    grid-template-rows: [row1-start]  1fr [row2-start] 1fr [row3-start] 1fr [row4-start] 1fr [row5-start] 1fr [row6-start]  1fr [row6-end];
+}

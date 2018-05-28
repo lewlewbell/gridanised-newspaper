@@ -1,0 +1,9 @@
+@import '../extensions/all';
+
+.author-tag {
+    width: 80%;
+    margin-bottom: $spacing-smallest;
+    border-bottom: 1px solid #000;
+    font-size: 12px;
+    font-weight: bold;
+}

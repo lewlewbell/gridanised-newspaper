@@ -1,0 +1,10 @@
+@import '../extensions/all';
+
+.info-box {
+    margin-bottom: $spacing-smaller;
+    border-top: 5px solid #2b7a9f;
+    padding: $spacing-smaller $spacing-smaller;
+    background-color: #dbe9f1;
+
+    ul { padding-left: 20px; }
+}

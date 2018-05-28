@@ -1,0 +1,17 @@
+@import '../extensions/all';
+
+.article {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.article--indented-paragraphs {
+    p {
+        text-indent: $spacing-small;
+        margin-bottom: 0;
+    }
+
+    p:first-of-type { text-indent: 0; }
+}

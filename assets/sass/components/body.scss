@@ -1,0 +1,10 @@
+@import '../extensions/all';
+
+body {
+    // This calculation ensures the minimum font size is 8px at 320px viewport width, and maximum font size of 26px at 1600px viewport width
+    // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+    // font-size: calc(8px + (26 - 8) * ((100vw - 320px) / (1600 - 320)));
+    font-size: 1.1vw;
+    font-family: 'Antic Didone', Arial;
+    background-color: $color-background;
+}

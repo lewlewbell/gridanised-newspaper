@@ -1,0 +1,13 @@
+@import '../extensions/all';
+
+.inside-stories {
+    height: 150px;
+    padding-top: 10px;
+
+    h2 {
+        color: #4D4C54;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: 'Kozuka Gothic Pro', Helvetica, sans-serif;
+    }
+} // TODO: Remove fixed height later to let the height flow naturally
